@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Welcome to the Ubuntu Post Install Script!"
-echo "                           -authored by XanderWatson"
+echo "                           -authored by SaahilNotSahil"
 echo "Let's get you started!"
 
 sudo apt update && sudo apt upgrade -y
@@ -12,5 +12,5 @@ wget https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30
 sudo dpkg -i ~/Downloads/code.deb
 sudo apt install -y python3-pip
 sudo apt update && sudo apt upgrade -y
-echo "export PATH='~/.local/bin:$PATH'" >>~/.bashrc
+echo "export PATH='$HOME/.local/bin:$PATH'" >>~/.bashrc
 source ~/.bashrc
